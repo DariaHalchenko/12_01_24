@@ -1,0 +1,182 @@
+#1
+#nimi=input("Mis on sinu nimi?")
+#if nimi=="Juku":
+#    print("läheme kinno")
+#    vanus=int(input("Kui vana sa oled?"))
+#    if vanus<0 or vanus>100:
+#        pilet="vale vanus"
+#    elif vanus<6:
+#        pilet="tasuta pilet"
+#    elif vanus<=14:
+#       pilet="lastepilet"
+#    elif vanus<=65:
+#        pilet="täispilet"
+#    elif vanus<=100:
+#        pilet="sooduspilet"
+#    print(pilet)#ilus ja õige vastus! "Vale vanus"  või "On vaja osta...."
+
+#else:
+#    print("Ma ootan Jukut")
+
+#2
+#nimi_üks= input("Mis on sinu nimi?")
+#nimi_kaks=input("Mis on sinu nimi?")
+#if nimi_üks == nimi_kaks:
+#    print("Samad nimed")
+#else:
+#    print("Täna " +nimi_üks+ " ja " +nimi_kaks+ " naabrid pingil ")
+
+#3
+#print("Tere!")
+#pikkus=float(input("Mis on teie seinte pikkus?")) #первая сторона длинее (длина)
+#laius=float(input("Mis on teie seinte laius?")) #вторая сторона меньше чем первая (ширина)
+#põranda_pindala = pikkus * laius
+#print("Põranda pindala: " , põranda_pindala, "ruutmeetri")
+#remont=input("Kas soovite remonti teha? Jah, Ei =>")
+#if remont == "Jah" :
+#        hind=float(input("Kui palju see ruutmeeter maksab?: "))
+#        summa=hind*põranda_pindala
+#        print("Remondi hind:" , summa, "eurot")
+#else:
+#        print("Ma ei vaja remonti")
+
+#4
+#from random import *
+#hind =randint(0,1000)
+#hind=float(input("Mis hind on? "))
+#if hind >=700:
+#    soodushind=hind*0.3
+#    print("Toode maksab" ,soodushind , "eurot")
+#else:
+#    print("Toode ilma allahindluseta")
+
+#5
+#temperatuuri=float(input("Mis su temperatuur on?  "))
+#if temperatuuri>18:
+#    print("Temperatuur üle 18 kraadi")
+#else:
+#    print("Temperatuur mitte üle 18 kraadi")
+#    print("See on talvel soovitatav temperatuur")
+
+#6
+#pikk=float(input("Kui pikk sa oled?  "))
+#if pikk<=160:
+#    print("Sul on madal kasv")
+#elif 160<pikk<=185:
+#    print("Sa oled keskmist kasvu")
+#elif 185<pikk<=220:
+#    print("Sa oled pikka kasvu")
+#else:
+#    print("Viga")
+
+#7
+#pikk=float(input("Kui pikk sa oled?  "))
+#sugu=input("Mis soost sa oled? (naine või mees)")
+#if sugu =="naine":
+#    if pikk<=160:
+#        print("Sa oled madal naine")
+#    elif 160<pikk<=185:
+#        print("Sa oled keskmist kasvu naine")
+#    else :
+#       print("Sa oled pikk naine")
+#if sugu =="mees":
+#    if pikk<=160:
+#        print("Sa oled madal mees")
+#    elif 160<pikk<=185:
+#        print("Sa oled keskmist kasvu mees")
+#    elif 185<pikk<=220:
+#        print("Sa oled pikk mees") 
+#else:   
+#    print("Viga")
+
+#8
+#from random import *
+#from datetime import *
+#date=date.today()
+#print("Tere!")
+#inimene=(input("Ostate piima, kukleid, leiba,muna? (Jah või ei)"))
+#if inimene =="Jah":
+#    piim=int(input("Kui palju piima? "))
+#    hind1=int(input("Mis hind on? "))
+#    summa1=piim * hind1
+#    kukkel=int(input("Mitu kuklit sa vajad? "))
+#    hind2=int(input("Mis hind on? "))
+#    summa2=kukkel*hind2
+#    leib=int(input("Kui palju leiba? "))
+#    hind3=int(input("Mis hind on? "))
+#    summa3=leib*hind3
+#    muna=int(input("Mitu muna?" ))
+#    hind4=int(input("Mis hind on? "))
+#    summa4=muna*hind4
+#    kogu_summa=summa1+summa2+summa3+summa4
+#    print("Teie tsekk")
+#    print("1.Piim" +str(piim)+ ".........................." +str(summa1))
+#    print("2.Kukkel" +str(kukkel)+ ".........................." +str(summa2) )
+#   print("3.Leib" +str(leib)+ "............................" +str(summa3) )
+#    print("4.Muna" +str(muna)+ "............................" +str(summa4) )
+#    print("Kokku..................................."+str(kogu_summa))    
+#    print("Head päeva!")
+#else:
+#    print("Ei, aitäh")
+
+#9 
+#a=float(input("Sisenege küljele: "))
+#b=float(input("Sisenege küljele: "))
+#if a==b:
+#    print("See on ruut")
+#else:
+#    print("See ei ole ruut")
+
+#10
+#from math import *
+#number=float(input("Sisestage number: "))
+#number1=float(input("Sisestage number: "))
+#märgid=input("Mida sa teha tahad? (Jah või Ei)")
+#if märgid=="Jah":
+#    operatsioonid=input("Valige toiming (+, -, /, *)")
+#    if operatsioonid=="+":
+#        tulemus=number+number1
+#        print("Lisamise tulemus: " +str(tulemus))
+#       if operatsioonid=="-":
+#            tulemus1=number-number1
+#            print("Tulemuse lahutamine: " +str(tulemus1))
+#            if operatsioonid=="/":
+#                tulemus2=number/number1
+#                print("Tulemuste jaotus: " +str(tulemus2))
+#            else:
+#                print("Nulliga jagada ei saa!")
+#       elif operatsioonid=="*":
+#                tulemus3=number*number1
+#                print("Korrutamise tulemus: " +str(tulemus3))
+#        else:
+#            print("Te ei saa nulliga korrutada!")
+#else:
+#    print("Viga")
+
+#11
+
+
+
+#12
+#hind=float(input("Sisesta hind: "))
+#if hind<=10:
+#    allahindlust=hind*0.1
+#    print("Koguhind " +str(allahindlust)+ " eurot")
+#elif hind>=10:
+#    allahindlust1=hind*0.2
+#    print("Koguhind " +str(allahindlust1)+ " eurot")
+
+#13
+#korrus=input("Kas sa oled mees või naine?")
+#if korrus=="mees":
+#    vanus=int(input("Palun märkige oma vanus "))
+#    if vanus>=16 and vanus<18:
+#        print("Sa sobid meie meeskonda!")
+#    else:
+#        print("Kahjuks sa ei sobi meie meeskonda!")
+#elif korrus=="naine":
+#    print("Kahjuks, otsime ainult mehi")
+#else:
+#     print("Viga")
+
+#14
